@@ -1,8 +1,11 @@
 package com.example.qrcode;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -19,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent i = new Intent(MainActivity.this,HomeActivity.class);
                 startActivity(i);
-                Toast.makeText(MainActivity.this, "Developed By Nikhil Saboo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Developed By Nikhil Saboo & Pankaj M", Toast.LENGTH_SHORT).show();
             }
         },1000);
         setContentView(R.layout.activity_main);
     }
+
 }
